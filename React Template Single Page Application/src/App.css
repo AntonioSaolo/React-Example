@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header,
+footer {
+  background-color: #0282a1;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+
+header {
+  min-height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu-button {
+  position: absolute;
+  left: 2%;
+  font-size: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: auto 0;
+}
+
+.logout-button {
+  position: absolute;
+  right: 2%;
+  font-size: 24px;
+  /* Regola questa dimensione secondo le tue esigenze */
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: auto 0;
+}
+
+.beat-hover {
+  transition: color 0.3s;
+  /* Aggiungi una transizione se desideri */
+}
+
+.beat-hover:hover {
+  animation: fa-beat 1s infinite ease-in-out;
+}
+
+.content {
+  display: flex;
+}
+
+main {
+  flex: 1;
+  padding: 1em;
+  transition: margin-left 0.3s ease;
+  height: 900px;
+  text-align: center;
+}
+
+.sidebar {
+  background-color: #666;
+  color: white;
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+}
+
+.sidebar ul li a:hover {
+  background-color: #555;
+}

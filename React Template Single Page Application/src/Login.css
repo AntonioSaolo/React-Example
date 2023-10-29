@@ -1,0 +1,29 @@
+.login-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.login-form h2 {
+    text-align: center;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.error {
+    color: red;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
